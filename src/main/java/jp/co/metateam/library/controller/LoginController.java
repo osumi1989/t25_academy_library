@@ -15,6 +15,10 @@ public class LoginController {
     public String login() {
         return "login";
     }
+
+
+
+    
     
     @GetMapping("/")
     public String redirectToIndex() {
@@ -24,6 +28,11 @@ public class LoginController {
         }
         return "redirect:/login";
     }
+    // テストコメント
+
+
+
+    
 }
 
 
