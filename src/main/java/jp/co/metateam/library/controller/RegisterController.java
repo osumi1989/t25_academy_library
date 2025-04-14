@@ -28,10 +28,14 @@ public class RegisterController {
     @Autowired
     public RegisterController(AccountService accountService){
         this.accountService = accountService;
+
+
     }
 
     @GetMapping("/register")
     public String registerForm(Model model) {
+        // test
+        // test2
         model.addAttribute("authorizationTypes", AuthorizationTypes.values());
 
         if (!model.containsAttribute("accountDto")) {
